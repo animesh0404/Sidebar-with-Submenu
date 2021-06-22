@@ -159,3 +159,9 @@ a {
 .showCollapse {
   display: block;
 }
+
+/* Rotate icon */
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
