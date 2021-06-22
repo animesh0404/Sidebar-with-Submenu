@@ -121,7 +121,7 @@ a {
   width: calc(var(--nav-width) + 9.25rem);
 }
 
-/* ====== Add Padding to Body ====== */
+/* Add Padding to Body  */
 .body-pd {
   padding: 2rem 0 0 16rem;
 }
@@ -129,4 +129,33 @@ a {
 /* Active links menu */
 .active {
   background-color: var(--first-color);
+}
+
+/* ====== Collapse ====== */
+.collapse {
+  grid-template-columns: 20px max-content 1fr;
+}
+
+.collapse__link {
+  justify-self: flex-end;
+  transition: 0.5s;
+}
+
+.collapse__menu {
+  display: none;
+  padding: 0.75rem 2.25rem;
+}
+
+.collapse__sublink {
+  color: var(--sub-color);
+  font-size: var(--small-font-size);
+}
+
+.collapse__sublink:hover {
+  color: var(--white-color);
+}
+
+/* Show Collapse */
+.showCollapse {
+  display: block;
 }
